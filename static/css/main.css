@@ -25,6 +25,8 @@ form {
     display: block;
     border-radius: 10px;
     transition: all 400ms;
+    cursor: pointer;
+    border: none;
 }
 
 .delete {
@@ -51,9 +53,9 @@ form {
 
 .submit:hover {
     background-color: green;
-    cursor: pointer;
 }
 
 .input {
     padding: 10px;
+    margin-right: 10px;
 }

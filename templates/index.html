@@ -19,7 +19,7 @@
                 <td>{{ task.content }}</td>
                 <td>{{ task.date_created }}</td>
                 <td>
-                    <a href="" class="button update">Update</a>
+                    <a href="/update/{{ task.id }}" class="button update">Update</a>
                     <a href="/delete/{{ task.id }}" class="button delete">Delete</a>
                 </td>
             </tr>

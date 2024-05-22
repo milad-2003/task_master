@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Updating a Task...</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1>Update Task</h1>
+
+    <form action="/update/{{task.id}}" method="post">
+        <input type="text" name="content" id="content" maxlength="255" placeholder="Task Content..." class="input" value="{{task.content}}" autofocus>
+        <input style="display: inline-block;" type="submit" value="Update Task" class="button update">
+        <a href="/" style="display: inline-block;" class="button delete">Cancel</a>
+    </form>
+</div>
+{% endblock %}
