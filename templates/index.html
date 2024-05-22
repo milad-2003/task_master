@@ -14,15 +14,17 @@
             <th>Added</th>
             <th>Actions</th>
         </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td>
-                <a href="">Update</a>
-                <br>
-                <a href="">Delete</a>
-            </td>
-        </tr>
+        {% for task in tasks %}
+            <tr>
+                <td>{{ task.content }}</td>
+                <td>{{ task.date_created }}</td>
+                <td>
+                    <a href="">Update</a>
+                    <br>
+                    <a href="">Delete</a>
+                </td>
+            </tr>
+        {% endfor %}
     </table>
 
     <form action="/" method="post">
