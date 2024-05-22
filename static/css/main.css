@@ -12,4 +12,48 @@ table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
     padding: 10px;
-  }
+}
+
+form {
+    margin: 15px;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+    border-radius: 10px;
+    transition: all 400ms;
+}
+
+.delete {
+    background-color: firebrick;
+    margin-top: 5px;
+}
+
+.delete:hover {
+    background-color: red;
+}
+
+.update {
+    background-color: midnightblue;
+}
+
+.update:hover {
+    background-color: blue;
+}
+
+.submit {
+    background-color: darkgreen;
+    display: inline-block;
+}
+
+.submit:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+.input {
+    padding: 10px;
+}
